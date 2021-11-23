@@ -3,7 +3,7 @@ import json
 import requests
 
 quipu_contract = pytezos.using('TEZOS_NODE')
-quipu_contract = pair1.contract('QUIPUSWAP_DEX_CONTRACT')
+quipu_contract = quipu_contract.contract('QUIPUSWAP_DEX_CONTRACT')
 
 # get token contract address
 token_addr = quipu_contract.storage()['storage']['token_address']
