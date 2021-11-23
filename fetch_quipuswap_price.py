@@ -8,7 +8,7 @@ quipu_contract = quipu_contract.contract('QUIPUSWAP_DEX_CONTRACT')
 # get token contract address
 token_addr = quipu_contract.storage()['storage']['token_address']
 token_contract = pytezos.using('TEZOS_NODE')
-token_contract = pair1_token.contract(token_addr)
+token_contract = token_contract.contract(token_addr)
 
 # this will check if it is FA1 or FA2 token
 token_id = None
